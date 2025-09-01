@@ -179,7 +179,7 @@ function Stat({ label, value, hint }) {
   );
 }
 
-export default function DetranCounterApp() {
+function DetranCounterApp() {
   const [state, setState] = useState(defaultState);
   const [today, setToday] = useState(todayInTZ());
 
@@ -407,3 +407,5 @@ export default function DetranCounterApp() {
     </div>
   );
 }
+
+export default DetranCounterApp;
